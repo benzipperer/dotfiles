@@ -1,0 +1,97 @@
+[
+{
+    "key": "ctrl+shift+enter",
+    "command": "r.sourceCurrentFileWithEcho",
+    "when": "!isRPackage && editorLangId == 'r'"
+},
+{
+    "key": "ctrl+shift+enter",
+    "command": "-r.sourceCurrentFile",
+    "when": "!isRPackage && editorLangId == 'r'"
+},
+{
+    "key": "Ctrl+. Ctrl+R",
+    "command": "workbench.action.executeCode.console",
+    "when": "editorTextFocus",
+    "args": {
+        "langId": "r",
+        "code": "fnmate::rs_fnmate()",
+        "focus": false
+    }
+},    
+{
+    "key": "Ctrl+B Ctrl+C",
+    "command": "workbench.action.executeCode.console",
+    "when": "editorTextFocus",
+    "args": {
+        "langId": "r",
+        "code": "breakerofchains::break_chain()",
+        "focus": false
+    }
+},
+{
+    "key": "Ctrl+. Ctrl+O",
+    "command": "workbench.action.executeCode.console",
+    "when": "editorTextFocus",
+    "args": {
+        "langId": "r",
+        "code": "eval(parse(text = atcursor::get_word_or_selection()))",
+        "focus": false
+    }
+},
+// targets
+{
+    "key": "Ctrl+T Ctrl+M",
+    "command": "workbench.action.executeCode.console",
+    "args": {
+        "langId": "r",
+        "code": "targets::tar_make()",
+        "focus": false
+    }
+},
+{
+    "key": "Ctrl+T Ctrl+T",
+    "command": "workbench.action.executeCode.console",
+    "args": {
+        "langId": "r",
+        "code": "bzipr::rstudio_addin_tar_make_target()",
+        "focus": false
+    }
+},
+{
+    "key": "Ctrl+T Ctrl+G",
+    "command": "workbench.action.executeCode.console",
+    "args": {
+        "langId": "r",
+        "code": "targets::tar_load_globals()",
+        "focus": false
+    }
+},
+{
+    "key": "Ctrl+T Ctrl+E",
+    "command": "workbench.action.executeCode.console",
+    "args": {
+        "langId": "r",
+        "code": "targets::tar_load_everything()",
+        "focus": false
+    }
+},
+{
+    "key": "Ctrl+T Ctrl+L",
+    "command": "workbench.action.executeCode.console",
+    "args": {
+        "langId": "r",
+        "code": "targets::rstudio_addin_tar_load()",
+        "focus": false
+    }
+},
+{
+    "key": "Ctrl+T Ctrl+R",
+    "command": "workbench.action.executeCode.console",
+    "args": {
+        "langId": "r",
+        "code": "targets::rstudio_addin_tar_read()",
+        "focus": false
+    }
+}
+]
