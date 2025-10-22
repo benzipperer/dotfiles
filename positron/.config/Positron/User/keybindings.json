@@ -10,7 +10,15 @@
     "when": "!isRPackage && editorLangId == 'r'"
 },
 {
-    "key": "Ctrl+. Ctrl+R",
+    "key": "shift+enter",
+    "command": "workbench.action.terminal.sendSequence",
+    "args": {
+        "text": "\\\r\n"
+    },
+    "when": "terminalFocus"
+},
+{
+    "key": "Ctrl+. R",
     "command": "workbench.action.executeCode.console",
     "when": "editorTextFocus",
     "args": {
@@ -20,7 +28,7 @@
     }
 },    
 {
-    "key": "Ctrl+B Ctrl+C",
+    "key": "Ctrl+B C",
     "command": "workbench.action.executeCode.console",
     "when": "editorTextFocus",
     "args": {
@@ -30,7 +38,7 @@
     }
 },
 {
-    "key": "Ctrl+. Ctrl+O",
+    "key": "Ctrl+. O",
     "command": "workbench.action.executeCode.console",
     "when": "editorTextFocus",
     "args": {
@@ -41,7 +49,7 @@
 },
 // targets
 {
-    "key": "Ctrl+T Ctrl+M",
+    "key": "Ctrl+T M",
     "command": "workbench.action.executeCode.console",
     "args": {
         "langId": "r",
@@ -50,7 +58,7 @@
     }
 },
 {
-    "key": "Ctrl+T Ctrl+T",
+    "key": "Ctrl+T T",
     "command": "workbench.action.executeCode.console",
     "args": {
         "langId": "r",
@@ -59,7 +67,7 @@
     }
 },
 {
-    "key": "Ctrl+T Ctrl+G",
+    "key": "Ctrl+T G",
     "command": "workbench.action.executeCode.console",
     "args": {
         "langId": "r",
@@ -68,7 +76,7 @@
     }
 },
 {
-    "key": "Ctrl+T Ctrl+E",
+    "key": "Ctrl+T E",
     "command": "workbench.action.executeCode.console",
     "args": {
         "langId": "r",
@@ -77,7 +85,7 @@
     }
 },
 {
-    "key": "Ctrl+T Ctrl+L",
+    "key": "Ctrl+T L",
     "command": "workbench.action.executeCode.console",
     "args": {
         "langId": "r",
@@ -86,7 +94,7 @@
     }
 },
 {
-    "key": "Ctrl+T Ctrl+R",
+    "key": "Ctrl+T R",
     "command": "workbench.action.executeCode.console",
     "args": {
         "langId": "r",
